@@ -26,14 +26,12 @@ This is a boilerplate project for building a single-page static site using [Elev
 
 2. **Install Dependencies:**
 
-    ```bash
     Copy code
     npm install
 
 ### Development
 Start the development server with live reload:
 
-    ```bash
     Copy code
     npm run serve
 
@@ -42,7 +40,6 @@ The site will be available at http://localhost:8080/.
 ### Building for Production
 Generate the optimized site for production:
 
-    ```bash
     Copy code
     npm run build
 
@@ -50,7 +47,6 @@ The output will be in the _site directory.
 
 ### Project Structure
 
-    ```lua
     Copy code
     eleventy-lenis-boilerplate/
     ├── src/
