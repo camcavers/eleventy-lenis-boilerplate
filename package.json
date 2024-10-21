@@ -1,0 +1,27 @@
+{
+  "name": "my-lenis-eleventy-site",
+  "version": "1.0.0",
+  "description": "A single-page static site with Eleventy and Lenis for smooth scrolling.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build:css": "postcss src/styles/style.css -o _site/styles/style.css",
+    "watch:css": "postcss src/styles/style.css -o _site/styles/style.css --watch",
+    "build": "npm run build:css && eleventy",
+    "serve": "npm-run-all --parallel watch:css start",
+    "start": "npx eleventy --serve",
+    "watch": "npm-run-all --parallel watch:css start"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@studio-freight/lenis": "^1.0.0",
+    "autoprefixer": "^10.0.0",
+    "cssnano": "^5.1.15",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^9.0.0",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^7.0.0"
+  }
+}
